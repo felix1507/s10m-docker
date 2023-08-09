@@ -2,7 +2,7 @@
 #define __S10M_H_
 
 /* configurations */
-#define MQTT_HOST "localhost"
+#define MQTT_HOST "mosquitto"
 #define MQTT_PORT 1883
 #define MQTT_QOS 0
 #define MQTT_RETAIN false
