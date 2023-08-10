@@ -89,6 +89,14 @@ cd s10m
 make
 ```
 
+## Build docker container
+
+IMPORTENT: Make shure the [configuration](#configuration) is correct for you.
+
+```
+docker build -t <image-name> .
+```
+
 ## Installation
 
 ```

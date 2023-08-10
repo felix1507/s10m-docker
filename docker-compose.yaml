@@ -1,19 +1,9 @@
 version: '3.1'
 
 services:
-  mosquitto:
-    image: eclipse-mosquitto:latest
-    volumes:
-      - ./mosquitto:/mosquitto
-      - ./mosquitto/data:/mosquitto/data
-      - ./mosquitto/log:/mosquitto/log
-    ports:
-      - 1883:1883
-      - 9001:9001
-
   s10m:
     image: s10m
-    container_name: s10-to-mqtt
+    container_name: s10m
     build:
       context: .
       dockerfile: Dockerfile
